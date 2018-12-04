@@ -16,8 +16,10 @@ class RegisterViewController: UIViewController {
     }
     
     
-    /*@IBAction func login(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "login", sender: self);
-    }*/
+    @IBAction func Register(_ sender: UIButton) {
+    
+        self.performSegue(withIdentifier: "registerToLogin", sender: self);
+    }
+    
 }
 
