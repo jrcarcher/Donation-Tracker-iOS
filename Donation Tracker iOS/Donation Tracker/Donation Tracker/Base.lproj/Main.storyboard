@@ -115,7 +115,7 @@
         <!--Register View Controller-->
         <scene sceneID="2VR-Qy-oz1">
             <objects>
-                <viewController id="7az-JJ-nXE" customClass="RegisterViewController" sceneMemberID="viewController">
+                <viewController id="7az-JJ-nXE" customClass="RegisterViewController" customModule="Donation_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z2B-0G-ebk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +158,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsC-dV-def">
-                                <rect key="frame" x="158" y="492" width="57" height="30"/>
+                                <rect key="frame" x="159" y="492" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
@@ -181,15 +181,28 @@
         <!--Main View Controller-->
         <scene sceneID="c7N-hq-G4m">
             <objects>
-                <viewController id="yGf-nb-gEF" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="yGf-nb-gEF" customClass="MainViewController" customModule="Donation_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7SV-eU-nnK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhP-vE-HHh">
+                                <rect key="frame" x="171" y="549" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJd-r0-USv">
+                                <rect key="frame" x="148" y="489" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Location Data"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fge-Kw-bht"/>
                     </view>
                     <connections>
-                        <segue destination="3b9-Ln-eaA" kind="showDetail" identifier="LocationData" id="cfp-uu-OI5"/>
+                        <segue destination="3b9-Ln-eaA" kind="showDetail" identifier="mainToLocationData" id="cfp-uu-OI5"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="mainToWelcome" id="40f-ll-1Ov"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLY-cd-90f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -213,7 +226,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eo3-PB-mT5"/>
-        <segue reference="nbR-OS-XgT"/>
+        <segue reference="jIL-rp-y7n"/>
+        <segue reference="40f-ll-1Ov"/>
     </inferredMetricsTieBreakers>
 </document>
