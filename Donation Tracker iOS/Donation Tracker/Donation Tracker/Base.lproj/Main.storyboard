@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <action selector="register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4p-VA-rHG"/>
+                                    <action selector="toRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XIt-qT-AIJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzH-nN-gte">
@@ -31,7 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEK-hA-pEU"/>
+                                    <action selector="toLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouO-B1-r0i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,7 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="cancel:" destination="o2u-6A-AgX" eventType="touchUpInside" id="PzP-XF-89U"/>
+                                    <action selector="cancelLogin:" destination="o2u-6A-AgX" eventType="touchUpInside" id="hRD-rD-tNq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNu-Qi-sr1">
@@ -125,7 +125,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="cancel:" destination="7az-JJ-nXE" eventType="touchUpInside" id="GbF-QQ-kxf"/>
+                                    <action selector="cancelRegister:" destination="7az-JJ-nXE" eventType="touchUpInside" id="y2L-od-IuS"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0h-jo-5Gv">
@@ -162,7 +162,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <action selector="register:" destination="7az-JJ-nXE" eventType="touchUpInside" id="c95-zA-aAN"/>
+                                    <action selector="register:" destination="7az-JJ-nXE" eventType="touchUpInside" id="rus-pM-Ke5"/>
                                 </connections>
                             </button>
                         </subviews>

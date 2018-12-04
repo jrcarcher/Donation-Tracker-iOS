@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func cancel(_ sender: UIButton) {
+    @IBAction func cancelLogin(_ sender: UIButton) {
         self.performSegue(withIdentifier: "loginToWelcome", sender: self);
     }
     

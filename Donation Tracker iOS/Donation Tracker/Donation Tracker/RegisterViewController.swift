@@ -15,13 +15,12 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func cancel(_ sender: UIButton) {
-    self.performSegue(withIdentifier: "registerToWelcome", sender: self);
+    @IBAction func register(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "registerToLogin", sender: self);
     }
     
-    @IBAction func register(_ sender: UIButton) {
-    
-        self.performSegue(withIdentifier: "registerToLogin", sender: self);
+    @IBAction func cancelRegister(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "registerToWelcome", sender: self);
     }
     
 }

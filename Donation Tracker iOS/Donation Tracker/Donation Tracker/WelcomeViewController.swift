@@ -15,11 +15,11 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func register(_ sender: UIButton) {
+    @IBAction func toRegister(_ sender: UIButton) {
         self.performSegue(withIdentifier: "welcomeToRegister", sender: self);
     }
     
-    @IBAction func login(_ sender: UIButton) {
+    @IBAction func toLogin(_ sender: UIButton) {
         self.performSegue(withIdentifier: "welcomeToLogin", sender: self);
     }
 }
