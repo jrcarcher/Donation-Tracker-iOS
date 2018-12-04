@@ -125,7 +125,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="cancel:" destination="7az-JJ-nXE" eventType="touchUpInside" id="aXS-9s-wLB"/>
+                                    <action selector="cancel:" destination="7az-JJ-nXE" eventType="touchUpInside" id="GbF-QQ-kxf"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0h-jo-5Gv">
@@ -162,7 +162,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <action selector="register:" destination="7az-JJ-nXE" eventType="touchUpInside" id="Yi4-1u-vOU"/>
+                                    <action selector="register:" destination="7az-JJ-nXE" eventType="touchUpInside" id="c95-zA-aAN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -214,6 +214,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="eo3-PB-mT5"/>
-        <segue reference="iC5-jQ-6Rk"/>
+        <segue reference="nbR-OS-XgT"/>
     </inferredMetricsTieBreakers>
 </document>
