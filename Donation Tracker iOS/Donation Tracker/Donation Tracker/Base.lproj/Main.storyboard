@@ -41,7 +41,7 @@
                     </view>
                     <connections>
                         <segue destination="o2u-6A-AgX" kind="showDetail" identifier="welcomeToLogin" id="jIL-rp-y7n"/>
-                        <segue destination="7az-JJ-nXE" kind="showDetail" identifier="createLogin" id="eNI-35-xhc"/>
+                        <segue destination="7az-JJ-nXE" kind="showDetail" identifier="welcomeToRegister" id="eNI-35-xhc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
