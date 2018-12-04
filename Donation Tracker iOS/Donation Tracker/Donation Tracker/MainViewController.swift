@@ -1,5 +1,5 @@
 //
-//  DataViewController.swift
+//  ViewController.swift
 //  Donation Tracker
 //
 //  Created by James Crowley on 12/3/18.
@@ -8,22 +8,16 @@
 
 import UIKit
 
-class DataViewController: UIViewController {
-
-    @IBOutlet weak var dataLabel: UILabel!
-    var dataObject: String = ""
-
-
+class MainViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.dataLabel!.text = dataObject
-    }
-
-
+    
+    
+    /*@IBAction func login(_ sender: UIButton) {
+     self.performSegue(withIdentifier: "login", sender: self);
+     }*/
 }
 
