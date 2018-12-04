@@ -8,16 +8,17 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    
+class WelcomeViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    
-    /*@IBAction func login(_ sender: UIButton) {
-     self.performSegue(withIdentifier: "login", sender: self);
-     }*/
-}
 
+    @IBAction func register(_ sender: UIButton) {
+    }
+    
+    @IBAction func login(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "welcomeToLogin", sender: self);
+    }
+}

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LocationDataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     
     
     /*@IBAction func login(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "login", sender: self);
-    }*/
+     self.performSegue(withIdentifier: "login", sender: self);
+     }*/
 }
+
 

@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
     
     
     /*@IBAction func login(_ sender: UIButton) {
-     self.performSegue(withIdentifier: "login", sender: self);
-     }*/
+        self.performSegue(withIdentifier: "login", sender: self);
+    }*/
 }
 
