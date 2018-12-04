@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU9-TS-5et">
-                                <rect key="frame" x="163" y="566" width="48" height="30"/>
+                                <rect key="frame" x="163" y="572" width="48" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                             </button>
@@ -66,6 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="cancel:" destination="o2u-6A-AgX" eventType="touchUpInside" id="Lhs-W9-Nsg"/>
                                     <action selector="login:" destination="o2u-6A-AgX" eventType="touchUpInside" id="Jqs-Rv-PhU"/>
                                 </connections>
                             </button>
@@ -108,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3d-Z0-Ewe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="27"/>
+            <point key="canvasLocation" x="1584.8" y="26.53673163418291"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="2VR-Qy-oz1">
@@ -119,9 +120,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MI-i0-AcK">
-                                <rect key="frame" x="163" y="549" width="48" height="30"/>
+                                <rect key="frame" x="163" y="549" width="48" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancel:" destination="7az-JJ-nXE" eventType="touchUpInside" id="zzM-Uq-Iuh"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0h-jo-5Gv">
                                 <rect key="frame" x="-1" y="345" width="375" height="111"/>
@@ -208,7 +212,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eo3-PB-mT5"/>
-        <segue reference="nbR-OS-XgT"/>
+        <segue reference="jIL-rp-y7n"/>
+        <segue reference="iC5-jQ-6Rk"/>
     </inferredMetricsTieBreakers>
 </document>
