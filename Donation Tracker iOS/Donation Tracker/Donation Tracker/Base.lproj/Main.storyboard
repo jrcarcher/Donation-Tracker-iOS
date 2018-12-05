@@ -104,6 +104,8 @@
                         <viewLayoutGuide key="safeArea" id="vRR-CI-AsL"/>
                     </view>
                     <connections>
+                        <outlet property="password" destination="hfu-gb-1X9" id="QAY-dx-vsP"/>
+                        <outlet property="username" destination="jqy-w9-nsl" id="YC4-UA-Wy3"/>
                         <segue destination="yGf-nb-gEF" kind="showDetail" identifier="loginToMain" id="FUa-wK-AFS"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="loginToWelcome" id="iC5-jQ-6Rk"/>
                     </connections>
@@ -254,6 +256,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="eo3-PB-mT5"/>
-        <segue reference="40f-ll-1Ov"/>
+        <segue reference="iC5-jQ-6Rk"/>
     </inferredMetricsTieBreakers>
 </document>
