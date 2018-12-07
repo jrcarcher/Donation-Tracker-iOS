@@ -27,6 +27,8 @@
 		4119876E21B9855C00011327 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4119876D21B9855C00011327 /* Users.swift */; };
 		4119877021BA241900011327 /* SelectedDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4119876F21BA241900011327 /* SelectedDonation.swift */; };
 		4119877221BA24A200011327 /* SelectedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4119877121BA24A200011327 /* SelectedLocation.swift */; };
+		4119877421BA63D000011327 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4119877321BA63D000011327 /* DonationViewController.swift */; };
+		41312F7A21BAE8A00041EBD5 /* SelectedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41312F7921BAE8A00041EBD5 /* SelectedUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		4119876D21B9855C00011327 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		4119876F21BA241900011327 /* SelectedDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDonation.swift; sourceTree = "<group>"; };
 		4119877121BA24A200011327 /* SelectedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedLocation.swift; sourceTree = "<group>"; };
+		4119877321BA63D000011327 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
+		41312F7921BAE8A00041EBD5 /* SelectedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				4119876B21B96C6800011327 /* Donations.swift */,
 				4119876F21BA241900011327 /* SelectedDonation.swift */,
 				4119877121BA24A200011327 /* SelectedLocation.swift */,
+				41312F7921BAE8A00041EBD5 /* SelectedUser.swift */,
+				4119877321BA63D000011327 /* DonationViewController.swift */,
 				4119876321B9378F00011327 /* User.swift */,
 				4119876D21B9855C00011327 /* Users.swift */,
 				4119875921B7100300011327 /* RegisterViewController.swift */,
@@ -297,6 +303,8 @@
 			files = (
 				4119876021B725E100011327 /* LocationDataViewController.swift in Sources */,
 				4119875E21B7228D00011327 /* MainViewController.swift in Sources */,
+				41312F7A21BAE8A00041EBD5 /* SelectedUser.swift in Sources */,
+				4119877421BA63D000011327 /* DonationViewController.swift in Sources */,
 				4119876221B88C0300011327 /* LocationDetailViewController.swift in Sources */,
 				4119875A21B7100300011327 /* RegisterViewController.swift in Sources */,
 				4119877221BA24A200011327 /* SelectedLocation.swift in Sources */,

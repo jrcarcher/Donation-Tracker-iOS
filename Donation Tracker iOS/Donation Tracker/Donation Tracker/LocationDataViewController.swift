@@ -10,7 +10,6 @@ import UIKit
 
 class LocationDataViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    
     @IBOutlet weak var locations: UIPickerView!
     
     override func viewDidLoad() {
@@ -36,12 +35,11 @@ class LocationDataViewController: UIViewController, UIPickerViewDataSource, UIPi
     @IBAction func cancel(_ sender: UIButton) {
         self.performSegue(withIdentifier: "locationDataToWelcome", sender: self);
     }
+        
     
-    @IBAction func selectLocation(_ sender: UIButton) {
-        SelectedLocation.set(location: Locations.locations![locations.selectedRow(inComponent: 0)])
-        self.performSegue(withIdentifier: "locationDataToLocationDetail", sender: self);
+    @IBAction func selectLoc(_ sender: UIButton) {
+        SelectedLocation.set(location: Locations.get()[locations.selectedRow(inComponent: 0)])
+        self.performSegue(withIdentifier: "locToNew", sender: self);
     }
-
+    
 }
-
-

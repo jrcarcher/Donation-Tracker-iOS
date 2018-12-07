@@ -34,7 +34,8 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
         var noRan = true
         for i in 0..<Users.get().count {
             if (Users.get()[i].username.elementsEqual(username.text!) && Users.get()[i].password.elementsEqual(password.text!)) {
-                self.performSegue(withIdentifier: "loginToMain", sender: self);
+                SelectedUser.set(user: Users.get()[i])
+             self.performSegue(withIdentifier: "loginToMain", sender: self);
                 noRan = false
             }
         }

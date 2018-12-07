@@ -26,6 +26,18 @@ class LocationDetailViewController: UIViewController {
         self.performSegue(withIdentifier: "locationDetailToWelcome", sender: self);
     }
     
+    @IBAction func donations(_ sender: UIButton) {
+        if (SelectedLocation.get().name.elementsEqual(SelectedUser.get().location.name)) {
+            detail.text = detail.text! + " \nDonations\n"
+            for i in 0 ..< Donations.get().count {
+                if (Donations.donations![i].location.name.elementsEqual(SelectedLocation.get().name)) {
+                    detail.text = detail.text! + Donations.donations![i].time + " " + Donations.donations![i].shortDescription + " "
+                    detail!.text = detail!.text! + Donations.donations![i].longDescription + " " + Donations.donations![i].value + " " + Donations.donations![i].donationCategory + "\n"
+                }
+            }
+        }
+    }
+    
     /*@IBAction func login(_ sender: UIButton) {
      self.performSegue(withIdentifier: "login", sender: self);
      }*/

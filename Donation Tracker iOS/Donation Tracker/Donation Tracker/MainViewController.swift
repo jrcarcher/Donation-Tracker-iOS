@@ -15,6 +15,10 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func addDonation(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "mainToDonation", sender: self);
+    }
+    
     @IBAction func cancelMain(_ sender: UIButton) {
         self.performSegue(withIdentifier: "mainToWelcome", sender: self);
     }

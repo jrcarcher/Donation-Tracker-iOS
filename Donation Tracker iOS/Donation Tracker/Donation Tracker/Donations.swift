@@ -9,7 +9,7 @@
 import Foundation
 
 struct Donations {
-    static var donations: [Donation]? = nil
+    static var donations: [Donation]? = []
     
     static func set(donations: [Donation]) {
         self.donations = donations

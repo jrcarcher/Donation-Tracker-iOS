@@ -9,6 +9,7 @@
 import Foundation
 
 struct Locations {
+    
     static var locations: [Location]? = [Location.init(name: "Shop", type: "Store", longitude: "1", latitude: "1", address: "n/a", phoneNumber: "7030000000")]
     
     static func set(locations: [Location]) {
