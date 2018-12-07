@@ -8,17 +8,40 @@
 
 import UIKit
 
-class LocationDataViewController: UIViewController {
+class LocationDataViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    
+    @IBOutlet weak var locations: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nibs
+        self.locations.delegate = self
+        self.locations.dataSource = self
     }
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
     
-    /*@IBAction func login(_ sender: UIButton) {
-     self.performSegue(withIdentifier: "login", sender: self);
-     }*/
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+            return Locations.get().count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let titleRow = Locations.locations![row]
+            return titleRow.name
+    }
+    
+    @IBAction func cancel(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "locationDataToWelcome", sender: self);
+    }
+    
+    @IBAction func selectLocation(_ sender: UIButton) {
+        SelectedLocation.set(location: Locations.locations![locations.selectedRow(inComponent: 0)])
+        self.performSegue(withIdentifier: "locationDataToLocationDetail", sender: self);
+    }
+
 }
 
 

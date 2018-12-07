@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func toLocation(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "mainToLocation", sender: self);
+        self.performSegue(withIdentifier: "mainToLocationData", sender: self);
     }
     
 }

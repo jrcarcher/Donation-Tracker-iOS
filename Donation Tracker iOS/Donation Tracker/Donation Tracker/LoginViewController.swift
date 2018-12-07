@@ -31,10 +31,17 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
     }
     
     @IBAction func login(_ sender: UIButton) {
-        if(username.text!.elementsEqual(password.text!)) {
-        self.performSegue(withIdentifier: "loginToMain", sender: self);
+        var noRan = true
+        for i in 0..<Users.get().count {
+            if (Users.get()[i].username.elementsEqual(username.text!) && Users.get()[i].password.elementsEqual(password.text!)) {
+                self.performSegue(withIdentifier: "loginToMain", sender: self);
+                noRan = false
+            }
+        }
+        if (noRan) {
+            username.setMarkedText("Error", selectedRange: NSRange.init())
+            password.setMarkedText("Error", selectedRange: NSRange.init())
         }
     }
     
 }
-
